@@ -44,7 +44,7 @@ def send_email(object_mail,object_name,content,title,picture_abspath_dir):      
 	msg=MIMEMultipart()
 	msg.attach(MIMEText("Hello %s！\n %s"%(object_name,content),"plain","utf-8")) #初始化邮件内容
 	from_addr="xxxxxxxxx.com"                                #发送邮件的账号
-	passwd="xxxxxxxxxx"                                             #发送邮件账号的密码
+	passwd="xxxxxxxx"                                             #发送邮件账号的密码
 	smtp_server="smtp.163.com"                                     #smtp服务器   
 	msg['From'] = 'Night_Raid <%s>' % from_addr                    #设置发件人信息
 	msg['To'] = '%s<%s>' % (object_name,object_mail)               #设置收件人信息 
@@ -58,8 +58,10 @@ def send_email(object_mail,object_name,content,title,picture_abspath_dir):      
 			abspath_pic_list.append(os.path.join(picture_abspath_dir,pic))
 			hz=re.findall(r"\.(.*$)",pic)
 			hz_list.append(hz[0])
-	#server.set_debuglevel(1)                                      #显示邮件发送的详细信息并调试bug
-	picture_list.remove("Thumbs.db")
+	#server.set_debuglevel(1)
+			#显示邮件发送的详细信息并调试bug
+	if "Thumbs.db" in picture_list:
+		picture_list.remove("Thumbs.db")
 	print(picture_list)
 	if picture_list:
 		t1=t2=t3=t4=t5=t6=t7=t8=t9=t10=t11=t12=t13=t14=t15=0
