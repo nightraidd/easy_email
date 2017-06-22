@@ -40,7 +40,11 @@ c:\\users\\username
 				   |______xx.mp4
 			           |______xx.mp3
 			
-
+fivth:
+modified easy_email.py
+from_addr="xxxxxxxxx.com"                      
+passwd="xxxxxxxxxx"         
+chang from_addr,passwd to yours!
 
 		   
 
