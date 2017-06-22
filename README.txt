@@ -2,6 +2,7 @@
 writed  by python3.x 
 
 first:
+put easy_email under c:\\users\\username
 you shou put you doucument into c:\\users\\username\\email_python\\picture 
 document dir should make by yourself 
 
