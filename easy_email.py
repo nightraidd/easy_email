@@ -43,8 +43,8 @@ def send_email(object_mail,object_name,content,title,picture_abspath_dir):      
 	time1=time.time()                                  #获取初始时间
 	msg=MIMEMultipart()
 	msg.attach(MIMEText("Hello %s！\n %s"%(object_name,content),"plain","utf-8")) #初始化邮件内容
-	from_addr="15520497580@163.com"                                #发送邮件的账号
-	passwd="Dreamer66"                                             #发送邮件账号的密码
+	from_addr="xxxxxxxxx.com"                                #发送邮件的账号
+	passwd="xxxxxxxxxx"                                             #发送邮件账号的密码
 	smtp_server="smtp.163.com"                                     #smtp服务器   
 	msg['From'] = 'Night_Raid <%s>' % from_addr                    #设置发件人信息
 	msg['To'] = '%s<%s>' % (object_name,object_mail)               #设置收件人信息 
