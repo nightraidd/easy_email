@@ -3,7 +3,7 @@ writed  by python3.x
 
 first:
 put easy_email under c:\\users\\username
-you shoud put you doucument into c:\\users\\username\\email_python\\picture 
+you shoud put you doucument into c:\\users\\username\\email_python\\email_picture 
 document dir should make by yourself 
 
 second:
@@ -32,9 +32,9 @@ c:\\users\\username
 		           |
 			   |___email_content.txt
 			   |
-			   |___qq_count.txt
+			   |___qq_number.txt
 			   |
-			   |___picture
+			   |___email_picture
 			           |______xx.png
                                    |______xx.jpg
 				   |______xx.mp4
@@ -45,6 +45,9 @@ modified easy_email.py
 from_addr="xxxxxxxxx.com"                      
 passwd="xxxxxxxxxx"         
 chang from_addr,passwd to yours!
+
+sixth:
+from now,if you still not know,please click init.bat,it will be create file tree like fourth.
 
 		   
 
